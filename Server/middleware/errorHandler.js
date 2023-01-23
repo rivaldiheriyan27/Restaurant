@@ -14,7 +14,9 @@ const errorHandler = (err,req,res,next) =>{
     code = 401;
     message = `Invalid`;
     } else if (
-    err.name === `Food not found` 
+    err.name === `Food not found` ||
+    err.name === `Table not found` ||
+    err.name === `Customer not found`
     ) {
     code = 404;
     message = `Error not found`;
