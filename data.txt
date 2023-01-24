@@ -1,0 +1,14 @@
+yarn sequelize-cli model:generate --name Table --attributes tabelNumber:integer
+
+yarn sequelize-cli model:generate --name Food --attributes nameFood:string,picture:string,price:integer
+
+yarn sequelize-cli model:generate --name Order --attributes TableId:integer,FoodId:integer,quantity:integer,totalPice:integer,name:string
+
+yarn sequelize-cli seed:generate --name 'seedTable'
+yarn sequelize-cli seed:generate --name 'seedFood'
+yarn sequelize-cli seed:generate --name 'seedOrder'
+
+
+yarn sequelize-cli db:seed --seed 20230120081433-seedTable
+yarn sequelize-cli db:seed --seed 20230120081909-seedFood
+yarn sequelize-cli db:seed --seed 20230120081909-seedOrder

@@ -1,0 +1,9 @@
+[
+    {
+        "TableId" : 1,
+        "FoodId" : 1,
+        "quantity":2,
+        "totalPice":15000,
+        "name":"Heriyan"
+    }
+]
